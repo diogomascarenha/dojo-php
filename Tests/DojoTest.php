@@ -39,8 +39,7 @@ class DojoTest extends \PHPUnit_Framework_TestCase
 	public function testArrayHasKey()
 	{
 		$array = array ('position1' => 1, 'position2' => 1);
-    $this->assertArrayHasKey('position2',$array);
-
+		$this->assertArrayHasKey('position2',$array);
 		$this->assertArrayNotHasKey('position3',$array);
 	}
 }
