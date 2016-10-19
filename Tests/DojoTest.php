@@ -1,5 +1,7 @@
 <?php
 
+require_once dirname(__FILE__)	.'/../src/Dojo.php';
+
 class DojoTest extends \PHPUnit_Framework_TestCase
 {
 	public function testBooleanSample()
@@ -36,10 +38,16 @@ class DojoTest extends \PHPUnit_Framework_TestCase
 		$this->assertNull($null);
 	}
 
-	public function testArrayHasKey()
+	public function testArrayHasKeySample()
 	{
 		$array = array ('position1' => 1, 'position2' => 1);
 		$this->assertArrayHasKey('position2',$array);
 		$this->assertArrayNotHasKey('position3',$array);
+	}
+
+	public function testNameOnDojoClass()
+	{
+		$dojo = new Dojo('Exemplo');
+		$this->assertEquals('Exemplo',$dojo->getName());
 	}
 }
