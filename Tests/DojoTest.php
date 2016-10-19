@@ -1,10 +1,6 @@
 <?php
 
-<<<<<<< HEAD
 class DojoTest extends \PHPUnit_Framework_TestCase
-=======
-class ClientTest extends \PHPUnit_Framework_TestCase
->>>>>>> 195d9136ff989a78a0bb059750cf3fb349cd440c
 {
 	public function testBooleanSample()
 	{
